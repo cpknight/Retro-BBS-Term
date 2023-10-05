@@ -28,13 +28,13 @@ The script assumes that `tcpser` and `qodem` are subdirectories containing built
 
 - `kitty` is also a requirement - cf. [kitty](https://sw.kovidgoyal.net/kitty/). 
 
-- :information: If putting the above code out of this git repo on a different machine, before running `./configure` or `make build`, it will probably be necessary to run `autoreconf -f -i` (which may require a `sudo apt install autoconf` first). This is because this way of distributing source code isn't ideal. `tcpser` builds pretty well without, but `qodem` has a lot of artifacts in the repo, so `autoreconf` helps.
+- :information_source: If putting the above code out of this git repo on a different machine, before running `./configure` or `make build`, it will probably be necessary to run `autoreconf -f -i` (which may require a `sudo apt install autoconf` first). This is because this way of distributing source code isn't ideal. `tcpser` builds pretty well without, but `qodem` has a lot of artifacts in the repo, so `autoreconf` helps.
 
 ## Using the `retroBBSterm.sh` script...
 
 - I make a symbolic link to the `retroBBSterm.desktop` file so that I can double-click on an icon from my gnome desktop: 
 ```
-ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/applications/retroBBSterm.desktop
+sudo ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/applications/retroBBSterm.desktop
 ```
 - But you can run the script from your CLI, as well (with some extra debug output to boot). It will launch a new `kitty` terminal with 80x25 resolution for connecting to BBS's. While the window is open you can look in the `/tmp/retroBBSterm...` directory for additional logfiles and debug info, but this will be deleted when you exit `qodem`. 
 
