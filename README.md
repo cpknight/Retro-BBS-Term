@@ -50,8 +50,9 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 | BlackICE				| `ATDT blackice.bbsindex.de`		|
 | Canadian Rebel			| `ATDT canadianrebel.sytes.net:1981` 	|
 | Compufuck				| `ATDT compufuck.xyz`			|
-| Dark Systems				| `bbs.dsbbs.ca` 			|
-| Dark Realms				| `bbs.darkrealms.ca`			|
+| Dark Systems				| `ATDT bbs.dsbbs.ca` 			|
+| Dark Realms				| `ATDT bbs.darkrealms.ca`			|
+| Deadbeatz				| `ATDT deadbeatz.org`			|
 | Sharato's Heavenly Sphere		| `ATDT shsbbs.net`			|
 | Sinners Haven				| `ATDT sinnershaven.com`		|
 
