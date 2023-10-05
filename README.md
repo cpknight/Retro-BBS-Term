@@ -53,7 +53,7 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 | Dark Systems				| `bbs.dsbbs.ca` 			|
 | Dark Realms				| `bbs.darkrealms.ca`			|
 | Sharato's Heavenly Sphere		| `ATDT shsbbs.net`			|
-| Sinners something			|					|
+| Sinners Haven				| `ATDT sinnershaven.com`		|
 
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
 	- :warning: Don't toggle the status line mode using `Alt-7` - this gets caught up in an error loop, which I'll have to look into and fix later on.
