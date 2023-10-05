@@ -28,6 +28,8 @@ The script assumes that `tcpser` and `qodem` are subdirectories containing built
 
 - `kitty` is also a requirement - cf. [kitty](https://sw.kovidgoyal.net/kitty/). 
 
+- :information: If putting the above code out of this git repo on a different machine, before running `./configure` or `make build`, it will probably be necessary to run `autoreconf -f -i` (which may require a `sudo apt install autoconf` first). This is because this way of distributing source code isn't ideal. `tcpser` builds pretty well without, but `qodem` has a lot of artifacts in the repo, so `autoreconf` helps.
+
 ## Using the `retroBBSterm.sh` script...
 
 - I make a symbolic link to the `retroBBSterm.desktop` file so that I can double-click on an icon from my gnome desktop: 
@@ -44,18 +46,18 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 
 - Here's a sample BBS list to try:
 
-	| BBS					| ATDT					|
+	| BBS									| ATDT									|
 	| :------------------------------------	| :------------------------------------	|
-	| 32-Bit 				| `ATDT x-bit.org`			|
-	| BlackICE				| `ATDT blackice.bbsindex.de`		|
-	| Canadian Rebel			| `ATDT canadianrebel.sytes.net:1981` 	|
-	| Compufuck				| `ATDT compufuck.xyz`			|
-	| Dark Systems				| `ATDT bbs.dsbbs.ca` 			|
-	| Dark Realms				| `ATDT bbs.darkrealms.ca`		|
-	| Deadbeatz				| `ATDT deadbeatz.org`			|
-	| Distortion Matrix			| `ATDT d1st.org`			|
-	| Sharato's Heavenly Sphere		| `ATDT shsbbs.net`			|
-	| Sinners Haven				| `ATDT sinnershaven.com`		|
+	| 32-Bit 								| `ATDT x-bit.org`						|
+	| BlackICE								| `ATDT blackice.bbsindex.de`			|
+	| Canadian Rebel						| `ATDT canadianrebel.sytes.net:1981` 	|
+	| Compufuck								| `ATDT compufuck.xyz`					|
+	| Dark Systems							| `ATDT bbs.dsbbs.ca` 					|
+	| Dark Realms							| `ATDT bbs.darkrealms.ca`				|
+	| Deadbeatz								| `ATDT deadbeatz.org`					|
+	| Distortion Matrix						| `ATDT d1st.org`						|
+	| Sharato's Heavenly Sphere				| `ATDT shsbbs.net`						|
+	| Sinners Haven							| `ATDT sinnershaven.com`				|
 
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
 	- :warning: Don't toggle the status line mode using `Alt-7` - this gets caught up in an error loop, which I'll have to look into and fix later on.
