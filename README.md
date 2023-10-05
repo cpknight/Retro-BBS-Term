@@ -11,13 +11,13 @@ I'm running this on a Pop_OS! linux, and the `retroBBSterm.sh` script probably w
 - The `qodem` here was ripped from [quodem.soutceforge.io](https://qodem.sourceforge.io/). Thanks to Autumn Lamonte and all contributors for this amazing version Qmodem, which I remember from my BBS'ing days in the 1990s! 
 	- Some other versions are floating around which I should take a look at some point, eg. [cnmade/qodem](https://github.com/cnmade/qodem).
 
-## Buildi `tcpser` `qodem`; install `socat` `kitty` ...
+## Build `tcpser` `qodem`; install `socat` `kitty` ...
 
 The script assumes that `tcpser` and `qodem` are subdirectories containing built binaries in sub-directories. I don't install these two tools into `/usr/local/bin` or anything, since my use of these two execcutables is pretty self-contained. 
 
 - `tcpser` is easy to build; from the `Retro-BBS-Term` directory, probably just `cd tcpser`, `make clean` and `make` is all you need. This repo contains artifacts from the last time I built tcpser, so you'll definitely want to clean and re-build this.
 
-- `qodem` is a bit trickier to build since you'll have to clean artifacts up and run `configure` before building. I had to install some libraries that were not included in my distro. :warning: - running `qodem` by default creates all sorts of stuff in your home directory, so if you don't want that, it might be best to just run it through the script. From the `Retro-BBS-Term` directory:
+- `qodem` is a bit trickier to build since you'll have to clean artifacts up and run `configure` before building. I had to install some libraries that were not included in my distro. :warning:  Running `qodem` by default creates all sorts of stuff in your home directory, so if you don't want that, it might be best to just run it through the script. From the `Retro-BBS-Term` directory:
 	- `sudo apt install lib32ncurses-dev`
 	- `sudo apt install ibgpm-dev`
 	- `cd qodem ; ./configure`
