@@ -50,6 +50,7 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 | BlackICE				| `ATDT blackice.bbsindex.de`		|
 | Canadian Rebel			| `ATDT canadianrebel.sytes.net:1981` 	|
 | Compufuck				| `ATDT compufuck.xyz`			|
+| Dark Realms				| `bbs.dsbbs.ca` 			|
 | Sharato's Heavenly Sphere		| `ATDT shsbbs.net`			|
 
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
