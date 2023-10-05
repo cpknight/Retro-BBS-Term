@@ -1,9 +1,9 @@
 # Retro-BBS-Term
 My script for connecting to retro BBSs on linux using qodem and tcpser for a bit of added retro-authenticity.
 
-I'm running this on a Pop_OS! linux, and the `retroBBSterm.sh` script probably won't work super-well on yours without some modification. In particular, I've hard-coded a number of references to my home directory (`/home/cpknight`) which I'm guessing won't likely work well for you.
+I'm running this on a Pop_OS! linux, and the `retroBBSterm.sh` script probably won't work super-well on yours without some modification. In particular, I've hard-coded a number of references to my home directory (`/home/cpknight`) which I'm guessing won't likely work well for you out of the box. But if your username does happen to be `cpknight`, then who knows?
 
-## Acknoweldgements...
+## Acknowledgments...
 
 - The `tcpser` here was ripped from [go4retro/tcpser](https://github.com/go4retro/tcpser) which itself is a fork from Jim Brian's tcpser. This is a modem emulator which give me the experience of using `AT` commands so that I can pretend to 'dial' BBS's the old-school way. I do appreciate this is somewhat redundant to the built-in capabilities of `qodem`, but this setup works well for me. 
 	- Some other versions are floating around, eg. [FozzTexx/tcpser](https://github.com/fozztexx/tcpser). I'll be checking out the other versions later on to see if I can improve the functionality of this script. In due course. 
