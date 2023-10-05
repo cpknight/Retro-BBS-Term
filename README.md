@@ -34,7 +34,7 @@ The script assumes that `tcpser` and `qodem` are subdirectories containing built
 ```
 ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/applications/retroBBSterm.desktop
 ```
-- But you can run the script from 
+- But you can run the script from your CLI, as well (with some extra debug output to boot). It will launch a new `kitty` terminal with 80x25 resolution for connecting to BBS's. While the window is open you can look in the `/tmp/retroBBSterm...` directory for additional logfiles and debug info, but this will be deleted when you exit `qodem`. 
 
 - When you first get into `qodem` you'll have to connect it to the 'modem' - use `Alt-9` to do this. An error message will pop up on the screen, which can be dismissed. Now you're talking to the modem. Use `AT` commands, eg:
 	- `AT` should respond with an `OK`
