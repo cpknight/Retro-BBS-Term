@@ -39,6 +39,7 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 - When you first get into `qodem` you'll have to connect it to the 'modem' - use `Alt-9` to do this. An error message will pop up on the screen, which can be dismissed. Now you're talking to the modem. Use `AT` commands, eg:
 	- `AT` should respond with an `OK`
 	- `ATDT shsbbs.net` to 'dial' **Sharato's Heavenly Sphere**.
+ 	- `ATDT x-bit.org` to 'dial' the ** 32-Bit BBS**. 
 	- `ATDT canadianrebel.sytes.net:1981` to 'dial' the **Canadian Rebel BBS**.
 	- `+++` while connected to get back to the 'modem' (eg. then do `ATH` to hangup).
 
