@@ -38,15 +38,23 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 
 - When you first get into `qodem` you'll have to connect it to the 'modem' - use `Alt-9` to do this. An error message will pop up on the screen, which can be dismissed. Now you're talking to the modem. Use [AT](https://en.wikipedia.org/wiki/Hayes_AT_command_set) commands, eg:
 	- `AT` should respond with an `OK`
- 	- `ATDT blackice.bbsindex.de` to 'dial' **BlackICE BBS**.
 	- `ATDT shsbbs.net` to 'dial' **Sharato's Heavenly Sphere**.
- 	- `ATDT x-bit.org` to 'dial' the **32-Bit BBS**. 
-	- `ATDT canadianrebel.sytes.net:1981` to 'dial' the **Canadian Rebel BBS**.
 	- `+++` while connected to get back to the 'modem' (eg. then do `ATH` to hangup).
  	- `A/` to repeat the last command (eg. redial). 
 
+- Here's a sample BBS list to try:
+| BBS					| ATDT					|
+| :------------------------------------	| :------------------------------------	|
+| BlackICE				| `ATDT blackice.bbsindex.de`		|
+| Sharato's Heavenly Sphere		| `ATDT shsbbs.net`			|
+| 32-Bit 				| `ATDT x-bit.org`			|
+| Canadian Rebel			| `ATDT canadianrebel.sytes.net:1981` 	|
+| Compufuck				| `ATDT compufuck.xyz`			|
+|
+
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
 	- :warning: Don't toggle the status line mode using `Alt-7` - this gets caught up in an error loop, which I'll have to look into and fix later on.
+	- :warning: I'm finding that *Kermit* works best as a download protocol. But lots of BBS's prefer *Zmodem* which doesn't seem to work well in this setup. Something else to look into...
 
 ## Todo's...
 
