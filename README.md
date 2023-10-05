@@ -11,11 +11,9 @@ I'm running this on a Pop_OS! linux, and the `retroBBSterm.sh` script probably w
 - The `qodem` here was ripped from [quodem.soutceforge.io](https://qodem.sourceforge.io/). Thanks to Autumn Lamonte and all contributors for this amazing version Qmodem, which I remember from my BBS'ing days in the 1990s! 
 	- Some other versions are floating around which I should take a look at some point, eg. [cnmade/qodem](https://github.com/cnmade/qodem).
 
-## Building `tcpser` and `qodem` and installing `socat`...
+## Buildi `tcpser` `qodem`; install `socat` `kitty` ...
 
 The script assumes that `tcpser` and `qodem` are subdirectories containing built binaries in sub-directories. I don't install these two tools into `/usr/local/bin` or anything, since my use of these two execcutables is pretty self-contained. 
-
-
 
 - `tcpser` is easy to build; from the `Retro-BBS-Term` directory, probably just `cd tcpser`, `make clean` and `make` is all you need. This repo contains artifacts from the last time I built tcpser, so you'll definitely want to clean and re-build this.
 
@@ -25,8 +23,10 @@ The script assumes that `tcpser` and `qodem` are subdirectories containing built
 	- `cd qodem ; ./configure`
 	- `make clean ; make`
 
-- `socat` also needs to be installed, and this isn't the default on my distro:
+- `socat` needs to be installed, and this isn't the default on my distro:
 	- `sudo apt install socat`
+
+- `kitty` is also a requirement - cf. [kitty](https://sw.kovidgoyal.net/kitty/). 
 
 ## Using the `retroBBSterm.sh` script...
 
@@ -34,11 +34,12 @@ The script assumes that `tcpser` and `qodem` are subdirectories containing built
 ```
 ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/applications/retroBBSterm.desktop
 ```
+- But you can run the script from 
 
 - When you first get into `qodem` you'll have to connect it to the 'modem' - use `Alt-9` to do this. An error message will pop up on the screen, which can be dismissed. Now you're talking to the modem. Use `AT` commands, eg:
 	- `AT` should respond with an `OK`
-	- `ATDT shsbbs.net` to 'dial' ....
-	- `ATDT canadianrebel.sytes.net:1981` to 'dial' ....
+	- `ATDT shsbbs.net` to 'dial' **Sharato's Heavenly Sphere**.
+	- `ATDT canadianrebel.sytes.net:1981` to 'dial' the **Canadian Rebel BBS**.
 	- `+++` while connected to get back to the 'modem' (eg. then do `ATH` to hangup).
 
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
