@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Retro BBS Term
+Type=Application
+Comment=Launches tcpser, socat, kitty and qodem for telnet retro bbs connection goodness.
+Terminal=false
+Exec=/home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.sh
+Icon=/home/cpknight/Projects/Retro-BBS-Term/hayes-modem.png
+Categories=ConsoleOnly;Utility;
+Keywords=retro;bbs;term;qodem;tcpser;
