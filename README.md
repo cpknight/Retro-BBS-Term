@@ -43,7 +43,7 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
  	- `A/` to repeat the last command (eg. redial). 
 
 - Here's a sample BBS list to try:
-
+<center>
 | BBS					| ATDT					|
 | :------------------------------------	| :------------------------------------	|
 | 32-Bit 				| `ATDT x-bit.org`			|
@@ -56,7 +56,7 @@ ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/share/app
 | Distortion Matrix			| `ATDT d1st.org`			|
 | Sharato's Heavenly Sphere		| `ATDT shsbbs.net`			|
 | Sinners Haven				| `ATDT sinnershaven.com`		|
-
+</center>
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
 	- :warning: Don't toggle the status line mode using `Alt-7` - this gets caught up in an error loop, which I'll have to look into and fix later on.
 	- :warning: I'm finding that *Kermit* works best as a download protocol. But lots of BBS's prefer *Zmodem* which doesn't seem to work well in this setup. Something else to look into...
