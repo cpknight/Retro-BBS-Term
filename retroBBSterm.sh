@@ -42,7 +42,8 @@ echo "    Virtual modem: ${PTY_PATH}"
 # Start socat
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-CMD_SOCAT="socat pty,raw,echo=0,link=${PTY_PATH} TCP:127.0.0.1:${THE_PORT}"
+CMD_SOCAT="socat TCP:127.0.0.1:${THE_PORT} pty,raw,echo=0,link=${PTY_PATH}"
+#CMD_SOCAT="socat pty,raw,echo=0,link=${PTY_PATH} TCP:127.0.0.1:${THE_PORT}"
 #CMD_SOCAT="socat -d -d -v pty,rawer,link=${PTY_PATH} TCP:127.0.0.1:${THE_PORT}"
 $CMD_SOCAT >${TMP_DIRECTORY}/socat.log 2>&1 &
 PID_SOCAT=$!  
