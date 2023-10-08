@@ -19,7 +19,7 @@ The script assumes that `tcpser` and `qodem` are subdirectories containing built
 
 - `qodem` is a bit trickier to build since you'll have to clean artifacts up and run `configure` before building. I had to install some libraries that were not included in my distro. :warning:  Running `qodem` by default creates all sorts of stuff in your home directory, so if you don't want that, it might be best to just run it through the script. From the `Retro-BBS-Term` directory:
 	- `sudo apt install lib32ncurses-dev`
-	- `sudo apt install ibgpm-dev`
+	- `sudo apt install libgpm-dev`
 	- `cd qodem ; ./configure`
 	- `make clean ; make`
 
