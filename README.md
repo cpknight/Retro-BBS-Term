@@ -70,4 +70,5 @@ sudo ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/shar
 - Dig into things and improve the interaction between `socat` and `qodem`.
 	- Probably related: `zmodem` file transfers don't work.
 - Fix up this repo and add build and install scripts, etc.
+- Suggest [Moebius](https://blocktronics.github.io/moebius/)
 
