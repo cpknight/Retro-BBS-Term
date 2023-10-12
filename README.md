@@ -58,6 +58,7 @@ sudo ln -s /home/cpknight/Projects/Retro-BBS-Term/retroBBSterm.desktop /usr/shar
 	| Distortion Matrix						| `ATDT d1st.org`						|
 	| Sharato's Heavenly Sphere				| `ATDT shsbbs.net`						|
 	| Sinners Haven							| `ATDT sinnershaven.com`				|
+	| Undermine (:information_source: +`42`)				| `atdt binkp.undermine.ca` |
 
 - You should be able to use all of the functionality of `qodem`, but I have some notes and 'todos' below to work on.
 	- :warning: Don't toggle the status line mode using `Alt-7` - this gets caught up in an error loop, which I'll have to look into and fix later on.
